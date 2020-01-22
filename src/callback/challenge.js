@@ -4,7 +4,7 @@ const API_URL = 'https://rickandmortyapi.com/api/character/';
 function fetchData(url, callback) {
     let xhttp = new XMLHttpRequest();
     xhttp.open('GET', url, true);
-    xhttp.onreadystatechange = (evt) => {
+    xhttp.onreadystatechange = () => {
         // Para saber si la conexión se completó, donde 4 es completado
         if (xhttp.readyState === 4) {
             // Verifico si la petición fue realizada
